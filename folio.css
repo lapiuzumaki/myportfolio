@@ -3,6 +3,16 @@
     --background-color: #f8e5e5;
     --text-color: #000000;
     --highlight-color: #fa255e;
+    --card--color: #ffffff;
+
+}
+
+.dark-theme {
+    --primary-color: #8a6f71;
+    --background-color: #1F2041;
+    --text-color: #ffffff;
+    --highlight-color: #ff4d79;
+    --card--color: #5c537b;
 }
 
 * {
@@ -19,7 +29,7 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
 
-    
+
 }
 
 nav {
@@ -126,7 +136,6 @@ nav ul li a.active {
     text-decoration: none;
     background-color: var(--highlight-color);
     color: white;
-    /* color: var(--text-color); */
     padding: 10px 30px;
     border-radius: 50px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -137,23 +146,24 @@ nav ul li a.active {
     color: var(--highlight-color);
     border: 2px solid var(--highlight-color);
 }
-.img{
-   width: 40px;
+
+.img {
+    width: 40px;
     display: none;
 }
 
 
-.typing-text span{
+.typing-text span {
     position: relative;
 }
 
-.typing-text span::before{
+.typing-text span::before {
     content: "software Developer";
     color: #b74b4b;
     animation: words 20s infinite;
 }
 
-.typing-text span::after{
+.typing-text span::after {
     content: "";
     background-color: var(--background-color);
     position: absolute;
@@ -164,26 +174,36 @@ nav ul li a.active {
     animation: cursor 0.6s infinite;
 }
 
-@keyframes cursor{
-    to{
+@keyframes cursor {
+    to {
         border-left: 3px solid #ececec;
     }
 }
 
-@keyframes words{
-    0%, 20%{
+@keyframes words {
+
+    0%,
+    20% {
         content: "Web Developer";
     }
-    21%, 40%{
+
+    21%,
+    40% {
         content: "Developer";
     }
-    41%, 60%{
+
+    41%,
+    60% {
         content: "Web Designer";
     }
-    61%, 80%{
+
+    61%,
+    80% {
         content: "Youtuber";
     }
-    81%, 100%{
+
+    81%,
+    100% {
         content: "Video Editor";
     }
 }
@@ -191,76 +211,84 @@ nav ul li a.active {
 
 
 
-.img{
+.img {
     padding: 15px;
     width: 100px;
 }
-.b{
+
+.b {
     background-color: var(--background-color);
 }
-.c{
+
+.c {
     color: var(--text-color);
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.box{
+.box {
     /* height: 100vh; */
     margin: auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background-color:white ;
+    background-color: var(--card--color);
     box-shadow: inset 0px 0px 10px 3px var(--primary-color);
     border-radius: 20px;
 }
 
-.card{
+.card {
     box-shadow: 0px 0px 10px 3px var(--primary-color);
     background-color: var(--background-color);
-    min-width:400px ;
+    min-width: 400px;
     max-width: 400px;
     height: 300px;
     padding-top: 30px;
     margin: auto;
     border-radius: 20px;
 }
-.card img{
+
+.card img {
     height: 40%;
     display: block;
     margin: auto;
     margin-bottom: 10px;
 }
+
 .card p {
     margin-bottom: 20px;
 }
-.contact{
+
+.contact {
     margin-top: 50px;
 }
-.line{
+
+.line {
     margin-top: 30px;
     margin-bottom: 30px;
     display: block;
     width: 100%;
     border: 0.9px solid var(--primary-color);
 }
-.Project{
+
+.Project {
     margin: auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     padding: 127px 20px;
-    background-color:white ;
+    background-color: var(--card--color);
     box-shadow: inset 0px 0px 10px 3px var(--primary-color);
     border-radius: 20px;
-    
+
 }
-.project-card{
+
+.project-card {
     box-shadow: 0px 0px 10px 3px var(--primary-color);
     background-color: var(--background-color);
-    min-width:400px ;
+    min-width: 400px;
     max-width: 400px;
     height: 500px;
     margin: auto;
@@ -269,27 +297,30 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
 }
-.project-card iframe{
+
+.project-card iframe {
     border-radius: 20px;
     width: 95%;
     height: 90%;
 }
-.contact-box{
+
+.contact-box {
     margin: auto;
     width: 90%;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background-color:white ;
+    background-color: var(--card--color);
     box-shadow: inset 0px 0px 10px 3px var(--primary-color);
     border-radius: 20px;
     margin-bottom: 100px;
 }
-.contact{
+
+.contact {
     box-shadow: 0px 0px 10px 3px var(--primary-color);
     background-color: var(--background-color);
-   width: 80%;
+    width: 80%;
     height: 80%;
     margin: auto;
     border-radius: 20px;
@@ -297,7 +328,8 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
 }
-.contact{
+
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,56 +374,65 @@ button {
 }
 
 
-.about{
+.about {
     margin: auto;
     width: 90%;
     padding: 50px;
     padding-bottom: 200px;
-    background-color:white ;
+    background-color: var(--card--color);
     box-shadow: inset 0px 0px 10px 3px var(--primary-color);
     border-radius: 20px;
     margin-bottom: 100px;
 }
-.about li{
+
+.about li {
     font-size: 1.5rem;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-    .box{
+    .box {
         height: a;
     }
-    .project-card{
+
+    .project-card {
         min-width: 93%;
         margin-bottom: 20px;
     }
-    .card{
+
+    .card {
         min-width: 93%;
         margin-bottom: 20px;
     }
-    .img{
+
+    .img {
+        border-radius: 100%;
+        box-shadow: inset 0px 0px 5px 50px #9cc0cc;
         margin-left: auto;
-        padding: 5px;
+        padding: 10px;
         display: block;
     }
+
     .nav-links ul {
         display: block;
     }
-    .nav-links{
+
+    .nav-links {
         position: absolute;
         background-color: var(--background-color);
-       height: 100vh;
-       width: 240px;
-       top: 0;
-       right: 0;
-       z-index: 2;
-       text-align: start;
-       transition: 1s;
+        height: 100vh;
+        width: 240px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        text-align: start;
+        transition: 1s;
     }
-    .nav-links li{
+
+    .nav-links li {
         margin-top: 15px;
     }
-     
+
 
 
     .container {
@@ -415,41 +456,91 @@ button {
     .intro p {
         font-size: 1rem;
     }
+
+    #theme-toggle {
+        left: 20px;
+    }
 }
+
 html {
     scroll-behavior: smooth;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  .fade-in {
-    animation: fadeIn 1s ease-out;
-  }
-  .card, .hire-me {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover, .hire-me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  .card, .hire-me {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover, .hire-me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
+}
 
-  @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.card,
+.hire-me {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.hire-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card,
+.hire-me {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.hire-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .profile img {
-  animation: pulse 3s infinite;
+    animation: pulse 10s infinite;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    background-color: var(--card--color);
+    padding: 10px 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+}
+
+#theme-toggle:hover {
+    background-color: var(--highlight-color);
+}
+
+#theme {
+
+    width: 50px;
+    height: 50px;
 }

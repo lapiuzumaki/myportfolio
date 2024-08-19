@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href="folio.css">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="folio.css">
 </head>
 
 <body>
+ <img id="theme-toggle" src="img/night-mode.png">
   <nav>
     <div class="nav-links" id="navLinks">
       <ul>
@@ -34,7 +35,8 @@
       <div class="intro">
         <h2>Hi, I'm <span class="highlight">Anmol</span></h2>
         <h3 class="typing-text">I'm a <span></span></h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse.</p>
+        <p>Computer science student who loves coding
+          , Good at making websites and solving tech problems.</p>
         <div class="social-icons">
           <a href="#"><i class="fa-brands fa-linkedin"> </i>
             <a href="#"><i class="fa-brands fa-github"></i>
@@ -42,7 +44,7 @@
                 <a href="https://www.instagram.com/anmol_20_7?igsh=MWhyOXdnNGJqcGQwNg=="> <i
                     class="fa-brands fa-instagram"></i>
         </div>
-        <a href="#" class="hire-me">Hire me</a>
+        <a href="#contact" class="hire-me">Hire me</a>
       </div>
     </div>
   </section>
@@ -103,6 +105,17 @@
       navLinks.style.right = "-240px";
       navLinks.style.display = "none";
     }
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+  // if (body.classList.contains('dark-theme')) {
+  //   themeToggle.textContent = 'Light';
+  // } else {
+  //   themeToggle.textContent = 'Dark';
+  // }
+});
   </script>
   <script src="https://web3forms.com/client/script.js" async defer></script>
   </div>
