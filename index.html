@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="folio.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <img class="img" style="width: 60px; margin-top: 10px;" src="img/close (1).png" onclick="hideMenu()">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <img class="img" style="width: 60px;" src="img/menu-of-three-lines.png" onclick="showMenu() ">
+  </nav>
+  <section id="home">
+    <div class="container">
+      <div class="profile">
+        <img
+          src="img/ANMOL.jpeg.jpg"
+          alt="Profile Image">
+        <h1>Anmol Malviya</h1>
+      </div>
+      <div class="intro">
+        <h2>Hi, I'm <span class="highlight">Anmol</span></h2>
+        <h3 class="typing-text">I'm a <span></span></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"> </i>
+            <a href="#"><i class="fa-brands fa-github"></i>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i>
+                <a href="https://www.instagram.com/anmol_20_7?igsh=MWhyOXdnNGJqcGQwNg=="> <i
+                    class="fa-brands fa-instagram"></i>
+        </div>
+        <a href="#" class="hire-me">Hire me</a>
+      </div>
+    </div>
+  </section>
+  <span class="line"></span>
+  <h1 class="c highlight" id="skills">Skills</h1>
+  <div class="box">
+    <div class="card c"><img src="img/python.png" alt="">
+      <p>I am able to solve python problems</p><a href="#" class="hire-me">Hire me</a>
+    </div>
+    <div class="card c"><img src="img/browser.png" alt="">
+      <p>I am help you to create webside for you</p><a href="#" class="hire-me">Hire me</a>
+    </div>
+    <div class="card c"><img src="img/java.png" alt="">
+      <p>I am able to solve Java problems</p><a href="#" class="hire-me ">Hire me</a>
+    </div>
+  </div>
+  <span class="line"></span>
+  <h1 class="c highlight" id="Project">Project</h1>
+  <div class="Project">
+    <div class="project-card"><iframe src="https://complaintrgpv.netlify.app/" frameborder="0"></iframe></div>
+    <div class="project-card"><iframe src="https://softcrack20.netlify.app/" frameborder="0"></iframe></div>
+    <div class="project-card"><iframe src="https://anmol27.netlify.app/" frameborder="0"></iframe></div>
+  </div>
+  <span class="line"></span>
+  <h1 class="c highlight" id="about"> About</h1>
+
+  <div class="about" >
+   <li>Hi I am a student of computer science branch in government polytechnic college itasi</li>
+   <li>I'm also content creator , I like to create a video on youtube</li>
+   <li>And also I'm a web developer I like to develop new things and the way of coding</li>
+   <li>Right now I am doing an internship in which I am learning web development </li>
+   <li>this is my first portfolio which I am making in the internship</li>
+  </div>
+
+
+
+  <span class="line"></span>
+  <h1 class="c highlight" id="contact">Contact</h1>
+  <div class="contact-box">
+    <div class="contact">
+      <h2>Get in Touch</h2>
+      <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ec860e7e-211b-4864-bbe9-676b3a03dbcf">
+        <input type="text" name="Roll no" placeholder="Roll no (Optional)">
+        <input type="email" name="email" placeholder="Email (Optional)">
+        <textarea id="text" name="message" required placeholder="Message"></textarea>
+        <button class="hire-me" type="submit">Submit Form</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+      navLinks.style.display = "block";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-240px";
+      navLinks.style.display = "none";
+    }
+  </script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  </div>
+</body>
+
+</html>
