@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<link rel="stylesheet" href="folio.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="folio.css">
 </head>
 
 <body>
- <img id="theme-toggle" src="img/night-mode.png">
+  <button id="theme-toggle">🌙</button>
+
   <nav>
     <div class="nav-links" id="navLinks">
       <ul>
@@ -24,12 +25,16 @@
     </div>
     <img class="img" style="width: 60px;" src="img/menu-of-three-lines.png" onclick="showMenu() ">
   </nav>
+
+
+
+
+
+
   <section id="home">
     <div class="container">
       <div class="profile">
-        <img
-          src="img/ANMOL.jpeg.jpg"
-          alt="Profile Image">
+        <img src="img/ANMOL.jpeg.jpg" alt="Profile Image">
         <h1>Anmol Malviya</h1>
       </div>
       <div class="intro">
@@ -48,53 +53,97 @@
       </div>
     </div>
   </section>
+
+
+
+
   <span class="line"></span>
+
+
+
+
   <h1 class="c highlight" id="skills">Skills</h1>
-  <div class="box">
-    <div class="card c"><img src="img/python.png" alt="">
-      <p>I am able to solve python problems</p><a href="#" class="hire-me">Hire me</a>
+  <section class="block">
+    <div class="box">
+      <div class="card c"><img src="img/python.png" alt="">
+        <p>I am able to solve python problems</p><a href="#" class="hire-me">Hire me</a>
+      </div>
+      <div class="card c"><img src="img/browser.png" alt="">
+        <p>I am help you to create webside for you</p><a href="#" class="hire-me">Hire me</a>
+      </div>
+      <div class="card c"><img src="img/java.png" alt="">
+        <p>I am able to solve Java problems</p><a href="#" class="hire-me ">Hire me</a>
+      </div>
     </div>
-    <div class="card c"><img src="img/browser.png" alt="">
-      <p>I am help you to create webside for you</p><a href="#" class="hire-me">Hire me</a>
-    </div>
-    <div class="card c"><img src="img/java.png" alt="">
-      <p>I am able to solve Java problems</p><a href="#" class="hire-me ">Hire me</a>
-    </div>
-  </div>
+  </section>
+
+
+
+
+
   <span class="line"></span>
+
+
+
+
+
   <h1 class="c highlight" id="Project">Project</h1>
-  <div class="Project">
-    <div class="project-card"><iframe src="https://complaintrgpv.netlify.app/" frameborder="0"></iframe></div>
-    <div class="project-card"><iframe src="https://softcrack20.netlify.app/" frameborder="0"></iframe></div>
-    <div class="project-card"><iframe src="https://anmol27.netlify.app/" frameborder="0"></iframe></div>
-  </div>
-  <span class="line"></span>
-  <h1 class="c highlight" id="about"> About</h1>
-
-  <div class="about" >
-   <li>Hi I am a student of computer science branch in government polytechnic college itasi</li>
-   <li>I'm also content creator , I like to create a video on youtube</li>
-   <li>And also I'm a web developer I like to develop new things and the way of coding</li>
-   <li>Right now I am doing an internship in which I am learning web development </li>
-   <li>this is my first portfolio which I am making in the internship</li>
-  </div>
-
-
-
-  <span class="line"></span>
-  <h1 class="c highlight" id="contact">Contact</h1>
-  <div class="contact-box">
-    <div class="contact">
-      <h2>Get in Touch</h2>
-      <form id="form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="ec860e7e-211b-4864-bbe9-676b3a03dbcf">
-        <input type="text" name="Roll no" placeholder="Roll no (Optional)">
-        <input type="email" name="email" placeholder="Email (Optional)">
-        <textarea id="text" name="message" required placeholder="Message"></textarea>
-        <button class="hire-me" type="submit">Submit Form</button>
-      </form>
+  <section class="block">
+    <div class="Project">
+      <div class="project-card"><iframe src="https://complaintrgpv.netlify.app/" frameborder="0"></iframe></div>
+      <div class="project-card"><iframe src="https://softcrack20.netlify.app/" frameborder="0"></iframe></div>
+      <div class="project-card"><iframe src="https://anmol27.netlify.app/" frameborder="0"></iframe></div>
     </div>
-  </div>
+  </section>
+
+
+
+
+
+  <span class="line"></span>
+
+
+
+
+
+
+
+  <h1 class="c highlight" id="about"> About</h1>
+  <section class="block">
+    <div class="about">
+      <li>Hi I am a student of computer science branch in government polytechnic college itasi</li>
+      <li>I'm also content creator , I like to create a video on youtube</li>
+      <li>And also I'm a web developer I like to develop new things and the way of coding</li>
+      <li>Right now I am doing an internship in which I am learning web development </li>
+      <li>this is my first portfolio which I am making in the internship</li>
+    </div>
+  </section>
+
+
+
+
+  <span class="line"></span>
+
+
+
+
+
+  
+  <h1 class="c highlight" id="contact">Contact</h1>
+  <section class="block">
+    <div class="contact-box">
+      <div class="contact">
+        <h2>Get in Touch</h2>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="ec860e7e-211b-4864-bbe9-676b3a03dbcf">
+          <input type="text" name="Roll no" placeholder="Roll no (Optional)">
+          <input type="email" name="email" placeholder="Email (Optional)">
+          <textarea id="text" name="message" required placeholder="Message"></textarea>
+          <button class="hire-me" type="submit">Submit Form</button>
+        </form>
+      </div>
+    </div>
+  </section>
   <script>
     var navLinks = document.getElementById("navLinks");
     function showMenu() {
@@ -105,17 +154,18 @@
       navLinks.style.right = "-240px";
       navLinks.style.display = "none";
     }
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
 
-themeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-theme');
-  // if (body.classList.contains('dark-theme')) {
-  //   themeToggle.textContent = 'Light';
-  // } else {
-  //   themeToggle.textContent = 'Dark';
-  // }
-});
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      if (body.classList.contains('dark-theme')) {
+        themeToggle.textContent = "☀️";
+      } else {
+        themeToggle.textContent = "🌙";
+      }
+    });
+
   </script>
   <script src="https://web3forms.com/client/script.js" async defer></script>
   </div>
